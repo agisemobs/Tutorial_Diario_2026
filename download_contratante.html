@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Downloads Tutoriais - Ellos Ecm</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,800;1,800&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="header">
+    <img src="img/logo_prefeitura_contagem.jpg" alt="Prefeitura de Contagem" />
+  </div>
+
+  <div class="card">
+    <h1>Downloads de Tutoriais</h1>
+    <p>
+      Selecione o documento desejado para realizar o download dos tutoriais e
+      materiais de apoio do sistema.
+    </p>
+
+    <div class="select-group">
+      <label for="arquivo">Documento disponível:</label>
+      <select id="arquivo">
+        <option value="">-- Selecione --</option>
+        <option value="arquivos_pdf/contratante/TUTORIAL PARA PESQUISA E ACESSO AS ETAPAS NO SISTEMA ELLOS ECM.pdf">
+          Pesquisa e Acesso as Etapas do Sistema
+        </option>
+        <option value="arquivos_pdf/contratante/SEMOBS - TUTORIAL ASSINATURAS DIÁRIOS E APROVAÇÃO (REV.2).pdf">
+          Aprovação de Diário de Obra e Solicitação de Assinaturas
+        </option>
+        <option
+          value="arquivos_pdf/contratante/FISCAIS - TUTORIAL PARA VERIFICAR JUSTIFICATIVA DE RECUSA DAS ASSINATURAS.pdf">
+          Verificar Justificativa de Recusa da Assinatura em Documentos
+        </option>
+        <option value="arquivos_pdf/contratante/TUTORIAL DE AUDITORIA - ACOMPANHAMENTO DE FLUXOS DE MEDIÇÃO.pdf">
+          Acompanhamento - Fluxo de Medição
+        </option>
+        <option
+          value="arquivos_pdf/contratante/SEMOBS - TUTORIAL DE ASSINATURAS E VALIDAÇÃO DOS DOCUMENTOS DA MEDIÇÃO.pdf">
+          Validação dos Documentos da Medição e Solicitação de Assinaturas
+        </option>
+        <option
+          value="arquivos_pdf/contratante/TUTORIAL PARA BAIXAR TODOS OS ARQUIVOS DE MEDIÇÃO.pdf">
+          Download ZIP Completo dos Arquivos de Medição
+        </option>
+        <option
+          value="arquivos_pdf/contratante/TUTORIAL PARA UNIFICAR GUIA E REMAT - FISCAIS.pdf">
+          Unificar Guia e Remat (Contratos com mais de uma fonte de Recurso)
+        </option>
+         <option
+          value="arquivos_pdf/contratante/TUTORIAL PARA RENOMEAR DADOS DE ASSINATURAS.pdf">
+          Padronizar dados de Assinatura - OBRIGATÓRIO
+        </option>     
+      </select>
+    </div>
+
+    <a href="#" class="btn-download" id="btn-baixar">Baixar PDF</a>
+
+    <div class="footer">
+      Prefeitura de Contagem • Sistema de Gestão de Obras
+    </div>
+  </div>
+
+  <a href="index.html" class="btn-home">
+    <i class="fa fa-home"></i> Página Inicial
+  </a>
+
+  <script>
+    function baixarArquivo() {
+      const select = document.getElementById("arquivo");
+      const url = select.value;
+
+      if (!url) {
+        alert("Selecione um arquivo para download.");
+        return;
+      }
+
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+<footer>
+  Developed by Bruna Braga<br />
+  Equipe AGI – Assessoria de Gestão e Inovação - Semobs / 2026.
+</footer>
+
+</html>

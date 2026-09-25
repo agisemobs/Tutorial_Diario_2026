@@ -1,0 +1,143 @@
+:root {
+  --azul-prefeitura: #0b3d91;
+  --azul-escuro: #062a66;
+  --cinza-fundo: #f4f6f9;
+  --cinza-texto: #333;
+  --branco: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather Sans", sans-serif;
+
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url("img/imagem_fundo_contagem.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--text-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.header img {
+  max-width: 220px;
+  height: auto;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: var(--branco);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 32px 28px;
+  text-align: center;
+}
+
+.card h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.4rem;
+  color: var(--azul-prefeitura);
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.select-group {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.select-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.select-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  background: var(--branco);
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--azul-prefeitura);
+  color: var(--branco);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btn-download:hover {
+  background: var(--azul-escuro);
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.btn-home {
+  margin-top: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--azul-prefeitura);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn-home:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #999;
+  padding: 10px;
+  background: var(--cinza-fundo);
+}

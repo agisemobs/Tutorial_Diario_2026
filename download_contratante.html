@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Downloads Tutoriais - Ellos Ecm</title>
   <link rel="stylesheet" href="style.css" />
   <link
@@ -27,13 +28,15 @@
       <label for="arquivo">Documento disponível:</label>
       <select id="arquivo">
         <option value="">-- Selecione --</option>
-        <option value="tutorial-assinaturas-diarios.pdf">
+        <option value="tutorial-assinaturas-diarios-aprovacao.pdf">
           Aprovação de Diário de Obra e Solicitação de Assinaturas
-        </option>    
+        </option>
       </select>
     </div>
 
-    <a href="#" class="btn-download" id="btn-baixar">Baixar PDF</a>
+    <a href="#" class="btn-download" id="btn-baixar" onclick="baixarArquivo(); return false;">
+      <i class="fa fa-download"></i> Baixar PDF
+    </a>
 
     <div class="footer">
       Prefeitura de Contagem • Sistema de Gestão de Obras
@@ -43,6 +46,11 @@
   <a href="index.html" class="btn-home">
     <i class="fa fa-home"></i> Página Inicial
   </a>
+
+  <footer>
+    Developed by Bruna Braga<br />
+    Equipe AGI – Assessoria de Gestão e Inovação - Semobs / 2026.
+  </footer>
 
   <script>
     function baixarArquivo() {
@@ -58,9 +66,5 @@
     }
   </script>
 </body>
-<footer>
-  Developed by Bruna Braga<br />
-  Equipe AGI – Assessoria de Gestão e Inovação - Semobs / 2026.
-</footer>
 
 </html>
